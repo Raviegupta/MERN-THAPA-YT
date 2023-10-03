@@ -2,16 +2,15 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Hello World from the Server Side');
+  res.send('Home Page');
 });
-
 app.get('/about', (req, res) => {
   res.send('About Us Page');
 });
 app.get('/contact', (req, res) => {
   res.send('Contact Page');
 });
-app.get('/login', (req, res) => {
+app.get('/signin', (req, res) => {
   res.send('Login Page');
 });
 app.get('/signup', (req, res) => {
